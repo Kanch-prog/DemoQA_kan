@@ -141,8 +141,8 @@ public class ExploratoryTest {
     }
     // Method to perform logout
     public static void logout() {
-        // Locate the logout button (update the locator as needed)
-        By logoutBtn = By.id("submit"); // Replace with the actual ID for the logout button
+        // Locate the logout button 
+        By logoutBtn = By.id("submit"); 
 
         // Click on the logout button
         try {
@@ -152,8 +152,8 @@ public class ExploratoryTest {
             System.out.println("Error during logout: " + e.getMessage());
         }
 
-        // Optionally, verify logout by checking if the login button is displayed
-        By loginButton = By.id("login"); // Replace with the actual ID or locator for the login button
+        // Verify logout by checking if the login button is displayed
+        By loginButton = By.id("login"); 
         if (isElementVisible(loginButton)) {
             System.out.println("Logout verification successful. Login button is visible.");
         } else {
